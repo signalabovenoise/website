@@ -1,4 +1,4 @@
-# The Signal, The Noise  
+# Signal Above Noise
 
 A Financial Newsletter For Retail Investors  
 
