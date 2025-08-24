@@ -4665,7 +4665,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         transform: scale(0.8) translate(-50%, -50%);
       }
     </style>
-    <script>
+<!--     <script>
       function submitEmail(event) {
         let email = document.getElementById("subscription-email").value;
         if (email.trim().length === 0) return;
@@ -4694,6 +4694,48 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
           .catch((err) => {
             console.log("err", err);
           });
+      }
+    </script> -->
+    <script>
+      async function submitEmail(event) {
+        event.preventDefault();
+    
+        let email = document.getElementById("subscription-email").value;
+        if (email.trim().length === 0) return;
+    
+        const username = "website-user";
+        const password = "e0gC4f3g88BJKrsZ96ZS";
+        const authHeader = "Basic " + btoa(username + ":" + password);
+    
+        try {
+          const response = await fetch("https://api.signalabovenoise.com/subscribe", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": authHeader,
+            },
+            body: JSON.stringify({
+              email: email,
+              campaign: "Market summary", // or dynamic
+            }),
+          });
+    
+          const data = await response.json();
+          console.log("API response:", data);
+    
+          if (response.ok) {
+            sessionStorage.setItem("email", email);
+            document.getElementById("subscription-email").value = "";
+            document.getElementById("subscription-success").style.display = "block";
+            document.getElementById("subscription-form").style.display = "none";
+          } else {
+            console.error("Subscription failed:", data.error || "Unknown error");
+            alert("Failed to subscribe: " + (data.error || "Please try again."));
+          }
+        } catch (err) {
+          console.error("Error:", err);
+          alert("Network error while subscribing. Please try again.");
+        }
       }
     </script>
   </head>
