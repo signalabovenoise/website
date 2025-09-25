@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Charset & Viewport -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Newsletter Archive</title>
+
+  <!-- Title & SEO -->
+  <title>Stay Ahead of the Financial Markets | Signal Above Noise</title>
+  <meta name="keywords" content="financial markets insights, indian stocks, us stocks, crypto, financial newsletter, stock market news, investment tips, market indices, macro economy updates, sector pulse, IPO news, FII DII flow, Signal Above Noise">
+  <meta name="description" content="Stay ahead of the financial markets with curated insights on sectors, macro economy, indices, IPOs, and FII/DII flow. Trusted by 1000+ investors. Free. No spam.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Stay Ahead of the Financial Markets | Signal Above Noise">
+  <meta property="og:description" content="Stay ahead of the financial markets with curated insights on sectors, macro economy, indices, IPOs, and FII/DII flow. Trusted by 1000+ investors. Free. No spam.">
+  <meta property="og:image" content="https://www.signalabovenoise.com/static/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.signalabovenoise.com/archive/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stay Ahead of the Financial Markets | Signal Above Noise">
+  <meta name="twitter:description" content="Stay ahead of the financial markets with curated insights on sectors, macro economy, indices, IPOs, and FII/DII flow. Trusted by 1000+ investors. Free. No spam.">
+  <meta name="twitter:image" content="https://www.signalabovenoise.com/static/og-image.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.signalabovenoise.com/archive/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KLYESTRRK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6KLYESTRRK');
+  </script>
+
+  <!-- Styles -->
   <style>
     /* Reset & Base */
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #f9fafb;
       color: #111827;
       line-height: 1.6;
-      padding: 2rem;
     }
-    h1 {
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
       color: #111827;
     }
-
-    /* Grid Layout */
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h2.year {
+      margin: 2rem 0 1rem;
+      font-size: 1.5rem;
+      color: #1f2937;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.25rem;
+    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
     }
-
-    /* Card */
     .card {
       display: block;
       padding: 1.5rem;
@@ -45,35 +96,52 @@
       transform: translateY(-4px);
       box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     }
-    .card h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
       color: #1f2937;
     }
     .card p {
       font-size: 0.9rem;
       color: #6b7280;
     }
-
-    /* Footer */
     footer {
-      margin-top: 3rem;
+      background: #f3f4f6;
       text-align: center;
       font-size: 0.8rem;
       color: #9ca3af;
+      padding: 1rem;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
-  <h1>📬 Newsletter Archive</h1>
-  <div class="grid" id="newsletter_cards">
-    <!-- Example newsletter entries -->
-    <a class="card" href="2025-09-23.html">
-      <h2>September 23, 2025</h2>
-      <p>Fresh breakdown of key sectors and investment opportunities.</p>
-    </a>
-  </div>
+  <!-- Branding -->
+  <header>
+    <h1>📬 Signal Above Noise – Newsletter Archive</h1>
+  </header>
 
+  <!-- Main Content -->
+  <main>
+    <!-- Example group -->
+    <h2 class="year">2025</h2>
+    <div class="grid">
+      <a class="card" href="2025-09-25.html">
+        <h3>September 25, 2025</h3>
+        <p>Market insights, emerging opportunities, and sector highlights.</p>
+      </a>
+      <a class="card" href="2025-09-24.html">
+        <h3>September 24, 2025</h3>
+        <p>Daily financial newsletter with investor-friendly analysis.</p>
+      </a>
+      <a class="card" href="2025-09-23.html">
+        <h3>September 23, 2025</h3>
+        <p>Fresh breakdown of key sectors and investment opportunities.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer>
     © 2025 Signal Above Noise · All Rights Reserved
   </footer>
