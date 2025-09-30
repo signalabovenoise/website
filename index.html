@@ -4972,64 +4972,48 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </div>
               </div>
             </div>
-            <div class="flex justify-center mb-16 px-4">
-              <div class="relative group">
-                <div
-                  class="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-2xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                ></div>
+            <div class="mb-16 w-full flex flex-col items-center gap-3">
                 <a
-                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent h-10 relative bg-white/90 backdrop-blur-sm border-2 border-slate-200 hover:border-blue-400 text-slate-700 shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl px-8 py-4 text-base font-semibold hover:scale-[1.02] group/btn"
-                  href="/latest-newsletter"
-                  target="_blank"
+                    href="https://www.signalabovenoise.com/latest-newsletter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center w-64 justify-center gap-2 rounded-xl border border-slate-200 bg-white/80 backdrop-blur-sm text-slate-700 hover:text-blue-700 hover:border-blue-400 transition-all duration-300 px-6 py-3 text-sm font-medium shadow-sm hover:shadow-md"
                 >
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-6 h-6 bg-blue-100 rounded-lg flex items-center justify-center group-hover/btn:rotate-6 transition-all duration-300"
-                      id="newsletter-button-container"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-newspaper w-4 h-4 text-blue-600"
-                      >
-                        <path
-                          d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"
-                        ></path>
-                        <path d="M18 14h-8"></path>
-                        <path d="M15 18h-5"></path>
-                        <path d="M10 6h8v4h-8V6Z"></path>
-                      </svg>
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-newspaper h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+                            <path d="M18 14h-8"/>
+                            <path d="M15 18h-5"/>
+                            <path d="M10 6h8v4h-8V6Z"/>
+                        </svg>
+                        <span class="font-medium">Read Latest Edition</span>
                     </div>
-                    <span class="font-bold">View Latest Newsletter</span>
-                    <div
-                      class="w-5 h-5 bg-slate-100 group-hover/btn:bg-blue-100 rounded-full flex items-center justify-center group-hover/btn:translate-x-1 transition-all duration-300"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-arrow-right w-3 h-3 text-slate-600 group-hover/btn:text-blue-600"
-                      >
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                      </svg>
-                    </div>
-                  </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-arrow-right h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
                 </a>
-              </div>
+                
+                <a
+                    href="https://www.signalabovenoise.com/newsletters"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center w-64 justify-center gap-2 rounded-xl bg-transparent backdrop-blur-sm text-slate-700 hover:text-blue-700 hover:border-blue-400 transition-all duration-300 px-6 py-3 text-sm font-medium hover:shadow-md"
+                >
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-archive h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>
+                            <path d="M3 5h18"/>
+                            <path d="M8 11h8"/>
+                        </svg>
+                        <span class="font-medium">View All Editions</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-external-link h-4 w-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h6v6"/>
+                        <path d="M10 14 21 3"/>
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    </svg>
+                </a>
             </div>
             <div
               class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto px-4 mb-16"
